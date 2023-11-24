@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, m, a, b, c, i, j;
+    
+    cin >> m;
+    
+    for(j = 1; j <= m; j ++)
+    {
+    
+    cin >> n;
+    
+    a = n;
+    b = n + 1;
+    c = n + 2;
+    
+    if(a % 2 == 0)
+    {
+        a = a / 2;
+    }
+    else if(b % 2 == 0)
+    {
+        b = b / 2;
+    }
+    
+    if(a % 3 == 0)
+    {
+        a = a / 3;
+    }
+    else if(b % 3 == 0)
+    {
+        b = b / 3;
+    }
+    else if(c % 3 == 0)
+    {
+        c = c / 3;
+    }  
+    
+    cout << 1ULL * a * b * c << " ";
+    
+    }
+}
